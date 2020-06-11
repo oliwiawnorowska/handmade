@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #C5F0F0;
+    font-family: 'Handlee', cursive;
+    font-size:25px;
+}
+    
+    .container
+{
+   max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+  .header
+{
+ min-height: 100vh;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    background: url('facebook_cover_photo_2.png') center/ cover;
+}
+.nav{
+    position: sticky;
+    line-height: 70px;
+    background: #7FC2C2;
+}  
+
+
+.nav ul
+{
+  display: flex;
+    justify-content: space-between;
+    list-style: none
+  
+}
+ .nav li {
+    width: 100%;
+    
+}
+.nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #315C62;
+}
+
+.nav a:hover{
+    color: aqua
+}
+  .section
+{
+    text-align: justify;
+        padding:50px 0px;
+}
+.section:nth-of-type(odd){
+background-color: #5CA7BE;
+    
+}
+.section *:not(:first-child)
+{
+    margin-top: 30px
+        
+}
+.img{
+    
+    display:inline-block;
+    width: 380px;
+    text-align: center;
+    padding: 5px;
+    transition: all 0.2s ease-in-out; 
+    
+}
+
+.img p{
+    padding: 5px;
+    margin-top: 10px;
+}
+ 
+
+.img:hover{
+    transform: scale(0.9)
+}
+
+
+ #contact-form {
+            margin: auto;
+            width: 400px;
+            max-width: 100%;
+        }
+        
+        #contact-form legend {
+            font-size: 24px;
+        }
+        
+        #contact-form em {
+            color: red;
+        }
+      
+        #contact-form .item {
+            position: relative;
+            margin: 28px 0;
+        }
+        
+        #contact-form input, #contact-form textarea {
+            padding: 10px 35px;
+            width: 100%;
+            font-size: 20px;
+            background: #efefef;
+            border: none;
+            box-sizing: border-box;
+        }
+        
+        #contact-form label {
+            opacity: 0.3;
+            position: absolute;
+            bottom: 0px;
+            left: 5px;
+            transition: 1s all;
+            font-size: 20px;
+            line-height: 40px;
+        }
+        
+        #contact-form input:focus, #contact-form textarea:focus {
+            border: 1px solid #666;
+        }
+        
+        #contact-form input:focus + label, #contact-form input:valid + label {
+            bottom: 40px;
+            font-size: 16px;
+            opacity: 0.7;
+        }
+        
+        #contact-form input:valid {
+            background-image: url('https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678134-sign-check-128.png');
+            background-repeat: no-repeat;
+            background-size: 25px;
+            background-position: 1% 50%;
+            border: 2px solid #16FF84;
+        }
+        
+        #contact-form textarea + label {
+            top: 0;
+        }
+        
+        #contact-form textarea:focus + label, #contact-form textarea:valid + label {
+            top: -32px;
+            font-size: 16px;
+            opacity: 0.7;
+        }
+        
+        #contact-form textarea:valid {
+            border: 2px solid #16FF84;
+        }
+        
+        #contact-form input[type="submit"] {
+            border: none;
+            background-image: none;
+            background-color: #228822;
+            color: #fff;
+        }
+        
+        #contact-form input[type="submit"]:hover {
+            cursor: pointer;
+            background-color: #226622;
+        }
+
+.footer
+{
+    padding: 20px;
+    font-size:15px;
+ 
+}
+.sticky
+{
+    width: 100%;
+        position: fixed;
+    left: 0;
+    top:0;
+    z-index: 100;
+}
