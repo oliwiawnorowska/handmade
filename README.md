@@ -1,2 +1,1 @@
-# handmade
-strona handmade
+link do strony: https://oliwiawnorowska.github.io/handmade/
