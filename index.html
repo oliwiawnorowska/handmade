@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Home Decor</title>
+        <meta name="description" content="Strona poświęcona ręcznierobionym dodatkom do ozdobywnętrz" />
+        <meta name="keywords" content="handmade, ozdoby, ozdoba wnętrz, mieszkanie, własnoręcznie robione" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+        <link rel="stylesheet" href="main.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    </head>
+    <body>
+       
+	   <nav class="nav">
+       <div class="container">
+       <ul>
+       <li> <a href="#home">Home</a></li>
+       <li> <a href="#o-mnie">O mnie</a></li>
+       <li><a href="#galeria">Galeria</a></li>
+       <li><a href="#cennik">Cennik</a></li>
+       <li><a href="#kontakt">Kontakt</a></li>
+       </ul>
+        </div>
+        </nav>
+         <header class="header" id="home"></header>
+         <div class="container">
+	 </div>
+    
+	    <section class="section" id="o-mnie">
+	         <div class="container">
+                 <center> <h2>Witaj!</h2></center>
+<p>Mam na imię Agnieszka i serdecznie witam Cię na mojej stronie.
+Od paru lat moim hobby stało się wykonywanie własnoręcznych dekoracji domowych.
+Uważam, że to świetny sposób na stworzenie unikalnych ozdób do swojego mieszkania, 
+a także spędzenie kreatynie czasu. Jeżeli szukasz ciekawych i oryginalnych przedmiotów
+ do ozdobienia
+Twojego wnętrza zapraszam do obejrzenia galerii. Poczuj się jak w domu! :)</p>
+        </div>
+        </section>
+        <section class="section" id="galeria">
+         <div class="container">
+             <h3>Galeria</h3>
+             
+          <div class="img">
+          
+           <a href="#"><img src="maxresdefault.jpg" width="250" height="220" /></a>
+           <p>Naczynia</p>
+           </div>
+            <div class="img">
+           <a href="#"><img src="pol_pl_Stroik-Boze-Narodzenie-I-srednica-ok-15-20-cm-12835_1.jpg" width="250" height="220"/></a>
+           <p>Stroiki</p></div>
+            <div class="img">
+           <a href="#"><img src="decoupage.jpg" width="250" height="220" /></a>
+           <p>Skrzynki</p></div>
+           <div class="img">
+          <a href="#"><img src="maxresdefault%20(1).jpg" width="250" height="220" /></a>
+          <p>Pudełka</p></div>
+           <div class="img">
+          <a href="#"><img src="hh.jpg" width="250" height="220" /></a>
+          <p>Zawieszki</p></div>
+
+          
+           </div>
+     </section>
+        <section class="section" id="cennik">
+         <div class="container">
+        <h3>Cennik</h3>
+        <ul>
+            <li>Naczynia..................................60zł</li>
+            <li>Stroiki.....................................40zł</li>
+            <li>Pudełka....................................50zł</li>
+            <li>Zawieszki...................................20zł</li>
+        </ul>
+        </div>
+        </section>
+        <section class="section"id="kontakt">
+         <div class="container">
+        <h3> Kontakt</h3>
+        <p>Masz pytanie? Napisz tutaj!</p>
+        <p></p>
+        <form action="" id="contact-form" method="post">
+        <fieldset>
+            <legend>Formularz kontaktowy</legend>
+            <div class="item">
+                <input required type="text" name="firstName" id="firstName" title="Proszę podać swoje imię">
+                <label for="firstName">Imię<em>*</em></label>                
+            </div>
+            <div class="item">
+                <input required type="text" name="secondName" id="secondName" title="Proszę podać swoje nazwisko">
+                <label for="secondName">Nazwisko<em>*</em></label>                
+            </div>
+            <div class="item">
+                <input required type="email" name="email" id="email" title="Proszę podać swój adres e-mail">
+                <label for="email">Email<em>*</em></label>                
+            </div>
+            <div class="item">
+                <textarea required rows="10" cols="20" name="message" id="message" title="Wpisz treść swojej wiadomości"></textarea>
+                <label for="message">Wiadomość<em>*</em></label>                
+            </div>
+            <input type="submit" class="send-button">          
+        </fieldset>
+    </form>
+        </div>
+ </section>
+	    <footer class="footer">
+	    <p> &copy; 2020r, Oliwia Wnorowska. Wszelkie prawa zastrzeżone.</p>
+       <a href="#"><img src="facebook-social-media-fb-logo-square-44659.png"width="20" height="20"  /></a>
+       <a href="#"><img src="instagram-1464521-1239436.webp"width="20" height="20" /></a>
+	    </footer>
+	    
+	<script src="jquery-3.5.1.min.js"></script>
+	<script>
+
+$(document).ready(function() {
+var stickyNavTop = $('.nav').offset().top;
+
+var stickyNav = function(){
+var scrollTop = $(window).scrollTop();
+
+if (scrollTop > stickyNavTop) {
+$('.nav').addClass('sticky');
+} else {
+$('.nav').removeClass('sticky');
+}
+};
+
+stickyNav();
+
+$(window).scroll(function() {
+stickyNav();
+});
+});
+
+</script>
+	</body>
